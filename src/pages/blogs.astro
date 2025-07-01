@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+      <NavBar />
+      <section>
+         <div>
+            <button type="button"></button>
+            <input type="search" placeholder="Search">
+         </div>
+         <div>
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+            <ArticleCard />
+         </div>
+
+         <button type="button"><!--expand icon goes here-->Expand</button>
+      </section>
+
+      <Footer />
+</BaseLayout>

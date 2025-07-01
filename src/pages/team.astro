@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroLayout from '../layouts/HeroLayout.astro';
+import Button from '../components/Button.astro';
+import CardsLayout from '../layouts/CardsLayout.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout>
+
+   <HeroLayout />
+
+   <section>
+      <h2>Team Members</h2>
+      <CardsLayout />
+      <Button />
+   </section>
+
+   <section>
+      <div>
+      <h2>Work with Us</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Voluptatum aspernatur possimus aperiam officia numquam molestiae aliquid dicta nostrum?</p>
+
+      <Button />
+      </div>
+   </section>
+   <Footer />
+</BaseLayout>
+
+
+

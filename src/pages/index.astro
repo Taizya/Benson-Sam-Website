@@ -1,62 +1,72 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroLayout from '../layouts/HeroLayout.astro';
-import AboutLayout from '../layouts/AboutLayout.astro';
 import PracticeArea from '../components/PracticeArea.astro';
 import CardsLayout from '../layouts/CardsLayout.astro';
 import Button from '../components/Button.astro';
-import ArticleCard from '../components/ArticleCard.astro'
+import ArticleCard from '../components/ArticleCard.astro';
 import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout>
-   <HeroLayout />
+  
+  <HeroLayout />
 
-   <AboutLayout />
+  <section>
+    <div>
+      <img src="/assets/images/site images/pexels-ekaterina-bolovtsova-6077326.jpg" alt="The Thinker statue">
+    </div>
+    <div>
+      <h2>Expert legal guidance, delivered with integrity and efficiency</h2>
+      <p>eritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur mag ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima venia suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel e</p>
+    </div>
+  </section>
 
-   <section class="value-proposition">
-      <div class="proposition-container">
-      <h1>Why Choose Us</h1>
-      <h4>Lorem Heading</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo natus, adipisci expedita cum nihil quidem. 
-      Illum voluptate eveniet culpa, perspiciatis ipsa eius accusantium similique animi, commodi, iste distinctio non enim.</p>
-      <h4>Some Heading</h4>
-      <p>Lorem psum dolor, sit amet consectetur adipisicing elit. Illo natus, adipisci expedita cum nihil quidem. 
-      Illum voluptate eveniet culpa, perspiciatis ipsa eius accusantium similique animi, commodi, iste distinctio non enim.</p>
-      </div>
-   </section>
+  <section>
+    <h2>Why Choose Us?</h2>
+    <div>
+      <h4>Proven Legal Expertise</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    </div>
+    <div>
+      <h4>Transparent & Strategic</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </section>
 
-   <section class="practice-areas">
-      <h2>Areas of Practice</h2>
-      <div class="areas-container">
-         <PracticeArea />
-         <PracticeArea />
-         <PracticeArea />
-         <PracticeArea />
-         <PracticeArea />
-         <PracticeArea />
-      </div>
-   </section>
+  <section>
+    <h2>Areas of Practice</h2>
+    <div>
+      <PracticeArea />
+      <PracticeArea />
+      <PracticeArea />
+      <PracticeArea />
+      <PracticeArea />
+      <PracticeArea />
+    </div>
+  </section>
 
-   <section class="our-team-section">
-      <h2>Our Team</h2>
-      <CardsLayout />
-      <Button />
-   </section>
+  <section>
+    <h2>Our Team</h2>
+    <CardsLayout />
+    <Button />
+  </section>
 
-   <section class="our-team">
-      <h2>Our Insights</h2>
+  <section>
+    <h2>Our Insights</h2>
+    <div>
       <ArticleCard />
-      <Button />
-   </section>
+      <ArticleCard />
+    </div>
+    <Button />
+  </section>
 
-   <section class="call-to-action">
-      <h1>Need Legal Support You Can Trust</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-      Nisi, pariatur! Corrupti aperiam reprehenderit natus ullam fugiat quasi mollitia veritatis exercitationem dignissimos qui accusantium a,
-      facere iusto quas quidem sed sequi?</p>
-      <span>Schedule your consultation today</span>
-      <Button />
-   </section>
-   <Footer />
+  <section>
+    <h2>Need Legal Support You Can Trust?</h2>
+    <p>Whether you're facing a complex legal challenge or simply need expert guidance, our experienced attorneys are here to help.</p>
+    <span>Schedule your consultation today.</span>
+    <Button />
+  </section>
+
+  <Footer />
 </BaseLayout>

@@ -1,0 +1,2 @@
+- Analyse the entire Project
+- Summarize the steps you will take to acomplish the task
