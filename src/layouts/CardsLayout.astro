@@ -1,11 +1,18 @@
 ---
-import Card from "../components/Card.astro"
+import Card from "../components/Card.astro";
 ---
-<!-- TODO: add conditional logic that defines how many cards and which type of card to render in the container based on a value passed 
-in from the section rendering it-->
 
-<div>
-   <Card />
-   <Card />
-   <Card />
+<div class="cards-layout">
+   <Card name="Sam Mujuda" position="Co-Founder" image="/src/assets/images/site images/TeamMember1.jpg" />
+   <Card name="Full Name" position="Position" />
+   <Card name="Full Name" position="Position" />
 </div>
+
+<style>
+    .cards-layout {
+        display: flex;
+        justify-content: center;
+        gap: 48px;
+        margin-top: 3rem;
+    }
+</style>

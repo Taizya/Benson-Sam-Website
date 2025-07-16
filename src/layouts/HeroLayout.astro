@@ -1,14 +1,37 @@
 ---
 import '../styles/home.css';
-import NavBar from '../components/NavBar.astro';
-import HeroContent from '../components/HeroContent.astro';
-import Shadow from '../components/Shadow.astro';
+import NavBar from "../components/NavBar.astro";
+import HeroContent from "../components/HeroContent.astro";
 ---
 
-<section>
-   <Shadow />
-   <div>
+<section class="hero-section">
+   <div class="hero-overlay"></div>
+   <div class="hero-content">
       <NavBar />
       <HeroContent />
    </div>
 </section>
+
+<style>
+    .hero-section {
+        background-image: url('/src/assets/images/site images/HeroImage.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 856px;
+        position: relative;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.73);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+</style>

@@ -1,14 +1,45 @@
 ---
 ---
 
-<div>
-   <a href="/">
-      <img src="" alt="Logo">
-   </a>
+<header>
+   <a href="/" class="logo">Benson & Sam</a>
    <nav>
       <a href="/about">About Us</a>
       <a href="/practice">Practice Areas</a>
-      <a href="/article">Articles</a>
+      <a href="/blogs">Articles</a>
       <a href="/contact">Contact Us</a>
    </nav>
-</div>
+</header>
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5rem;
+        border-bottom: 1px solid rgba(210, 172, 103, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        font-family: var(--font-family-headings);
+        font-weight: 400;
+        font-size: 32px;
+        text-decoration: none;
+        color: var(--primary-gold);
+    }
+
+    nav a {
+        font-family: var(--font-family-headings);
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--primary-gold);
+        margin-left: 2rem;
+        text-transform: uppercase;
+    }
+</style>

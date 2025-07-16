@@ -1,0 +1,330 @@
+@import url("./global.css");
+
+/* CSS Custom Properties for consistent theming */
+:root {
+  --primary-color: #d2ac67;
+  --text-dark: #000;
+  --text-light: #fff;
+  --background-light: #fff;
+  --background-dark: #121212;
+  --spacing-xs: 1rem;
+  --spacing-sm: 2rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 5rem;
+  --border-radius: 10px;
+  --max-width: 1200px;
+  --container-padding: clamp(1rem, 5vw, 3rem);
+}
+
+.hero-content {
+  text-align: left;
+  max-width: 975px;
+  margin: 0 auto;
+  padding: 147px 0;
+}
+
+.hero-content h1 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 86px;
+  line-height: 1;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+.hero-content p {
+  font-size: 1.35em;
+  line-height: 1.3;
+  color: var(--primary-color);
+}
+
+.expert-guidance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px var(--container-padding);
+  gap: 60px;
+  background-color: var(--background-light);
+}
+
+.expert-guidance-layout {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.expert-guidance .img-container {
+  flex-shrink: 0;
+}
+
+.expert-guidance img {
+  width: 457px;
+  height: 732px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  box-shadow: 0px 8px 6px 2px rgba(0, 0, 0, 0.25);
+}
+
+.expert-guidance-content {
+  background: rgba(255, 255, 255, 0.65);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  max-width: 459px;
+  box-shadow: 0px 8px 6px 2px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  position: relative;
+  margin-left: -152.33px;
+  color: #000;
+}
+
+.expert-guidance-content h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  color: #000;
+  margin-bottom: var(--spacing-sm);
+}
+
+.expert-guidance-content p {
+  font-size: var(--font-size-p);
+  line-height: 1.3;
+  color: #000;
+}
+
+.why-choose-us {
+  background-image: url("/src/assets/images/site images/ValuePropositionImage.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: var(--spacing-xl);
+  position: relative;
+  text-align: left;
+}
+
+.why-choose-us .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.73);
+  z-index: 1;
+}
+
+.why-choose-us .content {
+  position: relative;
+  z-index: 2;
+  max-width: 964px;
+  margin: 0 auto;
+}
+
+.why-choose-us h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-lg);
+  color: var(--primary-color);
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.reason h4 {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-xs);
+  color: var(--primary-color);
+}
+
+.reason p {
+  font-size: var(--font-size-p);
+  line-height: 1.3;
+  color: var(--primary-color);
+}
+
+.areas-of-practice {
+  padding: var(--spacing-xl);
+  background-color: var(--background-light);
+  text-align: center;
+}
+
+.areas-of-practice h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.3;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.practice-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(316px, 1fr));
+  gap: 48px;
+  max-width: 1044px;
+  margin: 0 auto;
+}
+
+.our-team {
+  padding: var(--spacing-xl);
+  background-color: var(--background-dark);
+  text-align: center;
+}
+
+.our-team h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.3;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.our-insights {
+  padding: var(--spacing-xl);
+  background-color: var(--background-light);
+  text-align: center;
+}
+
+.our-insights h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.insights-grid {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: var(--spacing-md);
+}
+
+.legal-support {
+  background-image: url("/src/assets/images/site images/CallToActionImage.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: var(--spacing-xl);
+  text-align: left;
+  position: relative;
+}
+
+.legal-support .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.73);
+  z-index: 1;
+}
+
+.legal-support .content {
+  position: relative;
+  z-index: 2;
+  max-width: 964px;
+  margin: 0 auto;
+}
+
+.legal-support h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 88px;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+.legal-support p {
+  font-size: var(--font-size-p);
+  line-height: 1.3;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+.legal-support span {
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 100px var(--container-padding);
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content p {
+    font-size: var(--font-size-p);
+  }
+
+  .expert-guidance {
+    flex-direction: column;
+    padding: var(--spacing-lg) var(--container-padding);
+  }
+
+  .expert-guidance img {
+    width: 100%;
+    height: auto;
+  }
+
+  .why-choose-us h2 {
+    font-size: 60px;
+  }
+
+  .reason h4 {
+    font-size: 32px;
+  }
+
+  .reason p {
+    font-size: var(--font-size-p);
+  }
+
+  .areas-of-practice h2 {
+    font-size: 48px;
+  }
+
+  .our-team h2 {
+    font-size: 48px;
+  }
+
+  .our-insights h2 {
+    font-size: 48px;
+  }
+
+  .insights-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .legal-support h2 {
+    font-size: 60px;
+  }
+
+  .legal-support p {
+    font-size: var(--font-size-p);
+  }
+
+  .legal-support span {
+    font-size: 32px;
+  }
+}

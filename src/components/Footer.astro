@@ -1,22 +1,100 @@
 ---
-
 ---
 
-<div>
-   <div>
-      <img src="" alt="Logo">
-   </div>
-   <div>
-      <span>Address</span>
-      <span>Phone number</span>
-      <span>Socials</span>
-   </div>
-   <div>
-      <div>
-         <a href="">ABOUT US</a>
-         <a href="">CONTACT US</a>
-         <a href="">PRIVACY POLICY</a>
-      </div>
-      <div><span>Copyright (c) 2025 Author. All Rights Reserved.</span></div>
-   </div>
-</div>
+<footer>
+    <div class="footer-content">
+        <div class="logo-container">
+            <a href="/" class="logo">Logo</a>
+        </div>
+        <div class="footer-details">
+            <div class="location">
+                <p>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+            </div>
+            <div class="contact-info">
+                <p>(123) 456-7890</p>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="social-media">
+                <p>Social Media</p>
+                <div class="social-icons">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-links">
+        <a href="/about">About us</a>
+        <a href="/contact">Contact us</a>
+        <a href="/help">Help</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/disclaimer">Disclaimer</a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2018 • Lift Media Inc.</p>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: #121212;
+        color: #D2AC67;
+        padding: 3rem 5rem;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(210, 172, 103, 0.2);
+        padding-bottom: 2rem;
+    }
+
+    .logo-container .logo {
+        font-family: 'Crimson Text', serif;
+        font-weight: 400;
+        font-size: 58px;
+        text-decoration: none;
+        color: #D2AC67;
+    }
+
+    .footer-details p {
+        font-family: 'Assistant', sans-serif;
+        font-weight: 400;
+        
+    }
+
+    .social-media p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        
+        opacity: 0.5;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid rgba(210, 172, 103, 0.2);
+    }
+
+    .footer-links a {
+        font-family: 'Crimson Text', serif;
+        font-weight: 400;
+        
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #D2AC67;
+    }
+
+    .copyright {
+        text-align: right;
+        padding-top: 1rem;
+        opacity: 0.5;
+    }
+
+    .copyright p {
+        font-family: 'Crimson Text', serif;
+        font-weight: 400;
+        
+    }
+</style>

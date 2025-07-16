@@ -1,10 +1,65 @@
 ---
+interface Props {
+	name: string;
+	position: string;
+	image?: string;
+}
+
+const { name, position, image } = Astro.props;
 ---
 
-<div>
-   <div>
-      <span>Description</span>
-      <span>Field</span>
-      <img src="" alt="arrow-icon">
-   </div>
+<div class="card">
+	{image && <img src={image} alt={name} class="member-image" />}
+	<div class="card-content">
+		<p class="name">{name}</p>
+		<p class="position">{position}</p>
+	</div>
 </div>
+
+<style>
+	.card {
+		width: 282px;
+		height: 464px;
+		border-radius: 12px;
+		box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.75);
+		background-color: #a68qnw;
+		color: #000000;
+		position: relative;
+	}
+
+	.member-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+
+	.card-content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 1.5rem;
+		background: linear-gradient(
+			to top,
+			rgba(217, 172, 90, 1) 85%,
+			rgba(108, 88, 53, 0) 41%
+		);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.name {
+		font-family: "Crimson Text", serif;
+		font-weight: 400;
+		
+		line-height: 1.3;
+	}
+
+	.position {
+		font-family: "Inter", sans-serif;
+		font-weight: 400;
+		
+		line-height: 1.2;
+	}
+</style>

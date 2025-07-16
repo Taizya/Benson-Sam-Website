@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary-gold: #d2ac67;
+  --primary-dark: #121212;
+  --primary-white: #ffffff;
+  --secondary-gray: #a2a2a2;
+  --light-gray: #d9d9d9;
+  --font-family-headings: "Crimson Text", serif;
+  --font-family-body: "Roboto", sans-serif;
+  --font-size-p: 1.35em;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-white);
+  color: var(--primary-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+  color: var(--primary-dark);
+}
+
+h1 {
+  font-size: 88px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+p {
+  font-size: var(--font-size-p);
+  font-family: var(--font-family-headings);
+  line-height: 1.3;
+}
+
+.button {
+  background-color: var(--primary-gold);
+  color: var(--primary-dark);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: var(--font-family-headings);
+  font-size: 32px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+}
+
+.button.dark {
+  background-color: var(--primary-dark);
+  color: var(--primary-gold);
+}
