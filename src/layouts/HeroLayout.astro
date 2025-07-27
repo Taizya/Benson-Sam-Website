@@ -2,13 +2,20 @@
 import '../styles/home.css';
 import NavBar from "../components/NavBar.astro";
 import HeroContent from "../components/HeroContent.astro";
+
+interface Props {
+  title?: string;
+  text?: string;
+}
+
+const { title, text } = Astro.props;
 ---
 
 <section class="hero-section">
    <div class="hero-overlay"></div>
    <div class="hero-content">
       <NavBar />
-      <HeroContent />
+      <HeroContent title={title} text={text}/>
    </div>
 </section>
 

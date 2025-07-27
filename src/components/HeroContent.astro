@@ -1,15 +1,18 @@
 ---
+interface Props {
+  title?: string;
+  text?: string;
+}
+
+const { 
+  title = 'Benson&Sam Advocates',
+  text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non ab cupiditate id ducimus. Error repellat molestiae exercitationem impedit vel nostrum natus atque ullam incidunt assumenda maxime, neque labore unde.' 
+} = Astro.props;
 ---
 
 <div class="hero-text-content">
-   <h1 class="hero-heading">Benson&Sam Advocates</h1>
-   <p class="hero-subtext">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.
-      Duis aute irure dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Ipsa non ab cupiditate id ducimus.
-      Error repellat molestiae exercitationem impedit vel nostrum natus atque ullam incidunt assumenda maxime, neque labore unde.
-   </p>
+   <h1 class="hero-heading">{title}</h1>
+   <p class="hero-subtext">{text}</p>
 </div>
 
 <style>

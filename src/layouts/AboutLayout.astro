@@ -1,12 +1,50 @@
 ---
 import GlassEffect from "../components/GlassEffect.astro";
+
+interface Props {
+  image: string;
+  title: string;
+  text: string;
+}
+
+const { image, title, text } = Astro.props;
 ---
 
-<section>
-   <div></div>
-   <GlassEffect>
-      <h3></h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab saepe mollitia consectetur voluptas voluptate 
-      labore quo totam, ratione, ex repudiandae quos id earum blanditiis ipsum beatae neque ipsa doloribus autem.</p>
-   </GlassEffect>
+<section class="introduction">
+   <div class="intro-layout">
+      <div class="img-container">
+         <img src={image} alt="Introduction image" />
+      </div>
+      <GlassEffect>
+         <h3>{title}</h3>
+         <p>{text}</p>
+      </GlassEffect>
+   </div>
 </section>
+
+<style>
+.introduction {
+  padding: 6.25em var(--container-padding);
+  background-color: var(--background-light);
+}
+
+.intro-layout {
+  display: flex;
+  align-items: center;
+  max-width: 70.25em;
+  margin: 0 auto;
+}
+
+.img-container {
+  flex-shrink: 0;
+}
+
+img {
+  width: 40.375em;
+  height: 47.4375em;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+  box-shadow: 0.5em 0.625em 0.375em 0 rgba(0, 0, 0, 0.25);
+}
+</style>
+

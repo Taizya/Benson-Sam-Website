@@ -8,29 +8,48 @@ import Footer from '../components/Footer.astro';
 
 <BaseLayout>
 
-   <HeroLayout />
+   <HeroLayout 
+      title="About Us"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut dolor" 
+   />
 
-   <AboutLayout />
+   <AboutLayout 
+      image="/src/assets/images/site images/pexels-ninthgrid-2149521550-30688593.jpg"
+      title="Founding and Early History of the Company"
+      text="Duis eu leo ac nulla bibendum blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer semper tortor in tellus porta, at pharetra purus tincidunt. Donec feugiat ligula ac ex rutrum, sit amet convallis lacus sollicitudin. Nunc id sapien a nulla commodo fermentum. Suspendisse potenti. Cras dictum imperdiet velit, nec finibus sem laoreet vitae."
+   />
 
-   <section>
-      <div>
-      <h2>Our Mission and Values</h2>
-      <h4>Provide Quality Service</h4>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo natus, adipisci expedita cum nihil quidem. 
-      Illum voluptate eveniet culpa, perspiciatis ipsa eius accusantium similique animi, commodi, iste distinctio non enim.</p>
-      <h4>Transparency</h4>
-      <p>Lorem psum dolor, sit amet consectetur adipisicing elit. Illo natus, adipisci expedita cum nihil quidem. 
-      Illum voluptate eveniet culpa, perspiciatis ipsa eius accusantium similique animi, commodi, iste distinctio non enim.</p>
-      </div>
-   </section>
+   <section class="why-choose-us">
+		<div class="overlay"></div>
+		<div class="content">
+			<h2>Our Mission and Values</h2>
+			<div class="reasons">
+				<div class="reason">
+					<h4>Provide Quality Service</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua
+					</p>
+				</div>
+				<div class="reason">
+					<h4>Transparency</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed do eiusmod tempor incididunt ut labore et dolore magna
+						aliqua.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-   <section>
-      <div>
-      <h2>Collaborate With a team that puts You first </h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius harum dolores assumenda temporibus, cupiditate,
-      iusto nihil nesciunt nobis repudiandae animi dolorum quas illum iure velit eum dolor officiis officia pariatur?</p>
-
-      <Button />
+   <section class="legal-support">
+      <div class="overlay"></div>
+      <div class="content">
+         <h2>Collaborate With a Team That Puts You First</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus fermentum, libero nec posuere vehicula, nulla nisl faucibus est, at egestas neque lorem sed lacus. Integer convallis, nisl sit amet facilisis accumsan, eros justo dictum urna, nec rhoncus eros nulla in arcu.</p>
+         <Button className="black" />
       </div>
    </section>
 
