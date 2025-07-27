@@ -9,6 +9,9 @@
   --font-family-headings: "Crimson Text", serif;
   --font-family-body: "Roboto", sans-serif;
   --font-size-p: 1.35em;
+  --font-size-h1: 6em;
+  --font-size-h2: 4.25em;
+  --font-size-h3: 2.5em;
 }
 
 body {
@@ -31,22 +34,22 @@ h6 {
 }
 
 h1 {
-  font-size: 88px;
+  font-size: 5.5em;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 64px;
+  font-size: 4em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 400;
 }
 
@@ -60,10 +63,10 @@ p {
   background-color: var(--primary-gold);
   color: var(--primary-dark);
   padding: 1rem 2rem;
-  border-radius: 10px;
+  border-radius: 0.625em;
   text-decoration: none;
   font-family: var(--font-family-headings);
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 400;
   display: inline-block;
   text-align: center;
@@ -72,4 +75,14 @@ p {
 .button.dark {
   background-color: var(--primary-dark);
   color: var(--primary-gold);
+}
+
+.button.gold {
+    background-color: var(--primary-gold);
+    color: var(--primary-dark);
+}
+
+.button.black {
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
 }
