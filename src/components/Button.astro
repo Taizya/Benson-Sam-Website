@@ -7,6 +7,4 @@ interface Props {
 const { className, text = 'Learn More' } = Astro.props;
 ---
 
-<div>
-   <button type="button" class:list={["button", className]}>{text}</button>
-</div>
+<button type="button" class:list={["button", className]}>{text}</button>

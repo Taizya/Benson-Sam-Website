@@ -1,5 +1,37 @@
 ---
+const { heading, paragraph } = Astro.props;
 ---
-<div>
-   <slot />
+
+<style>
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.65);
+    padding: 1.875em;
+    border-radius: 0.46875em;
+    max-width: 21.515625em;
+    box-shadow: 0em 0.375em 0.28125em 0.09375em rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    position: relative;
+    margin-left: -7.14046875em;
+    color: #000;
+  }
+
+  .glass-effect h2 {
+    font-family: "Crimson Text", serif;
+    font-weight: 550;
+    font-size: var(--font-size-h3);
+    line-height: 1.3;
+    color: #000;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .glass-effect p {
+    font-size: var(--font-size-p);
+    line-height: 1.3;
+    color: #000;
+  }
+</style>
+
+<div class="glass-effect">
+  <h2>{heading}</h2>
+  <p>{paragraph}</p>
 </div>

@@ -8,10 +8,10 @@
   --light-gray: #d9d9d9;
   --font-family-headings: "Crimson Text", serif;
   --font-family-body: "Roboto", sans-serif;
-  --font-size-p: 1.35em;
-  --font-size-h1: 6em;
-  --font-size-h2: 4.25em;
-  --font-size-h3: 2.5em;
+  --font-size-p: 1.0125em;
+  --font-size-h1: 4.5em;
+  --font-size-h2: 3.1875em;
+  --font-size-h3: 1.875em;
 }
 
 body {
@@ -62,11 +62,11 @@ p {
 .button {
   background-color: var(--primary-gold);
   color: var(--primary-dark);
-  padding: 1rem 2rem;
-  border-radius: 0.625em;
+  padding: 0.35rem 1.5rem;
+  border-radius: 0.425em;
   text-decoration: none;
   font-family: var(--font-family-headings);
-  font-size: 2em;
+  font-size: 1.25em;
   font-weight: 400;
   display: inline-block;
   text-align: center;
