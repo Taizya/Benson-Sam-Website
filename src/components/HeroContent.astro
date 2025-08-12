@@ -5,8 +5,8 @@ interface Props {
 }
 
 const { 
-  title = 'Benson&Sam Advocates',
-  text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non ab cupiditate id ducimus. Error repellat molestiae exercitationem impedit vel nostrum natus atque ullam incidunt assumenda maxime, neque labore unde.' 
+  title,
+  text
 } = Astro.props;
 ---
 
@@ -19,8 +19,10 @@ const {
     .hero-text-content {
         position: relative;
         top: 5.5rem;
-                color: #D2AC67;
-        width: 964px;
+        color: #D2AC67;
+        max-width: 60.25em;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
         margin: 0 auto;
     }
 

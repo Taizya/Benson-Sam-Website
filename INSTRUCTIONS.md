@@ -1,20 +1,14 @@
 ## TODO
 
-1. Read the @src/pages/index.astro, extrapulate the styles that create the glass like effect
-   from the expert-guidance-content class and apply them to the @src/components/GlassEffect.astro
-   Ensure that GlassEffect component accepts
-   props to be used in the paragraph and heading
-2. Use the new glass effect instead of applying the styles directly instead of using a the div with expert-guidance-content
-   and use the exact same paragraph and heading text used in the previous iteration
-3. Modify the button styles for both black and gold to use the following:
-   ```
-      padding: 0.35rem 1.5rem;
-      border-radius: 0.425em;
-      font-size: 1.25em;
-   ```
-4. Modify the our-team and the ourt-insights sections to use a flexbox to contain the Heading, Cardslayout/insights-grid
-   and the button with a 1.5rem gap. Make sure all the elements are still aligned in a column with the elements
-   contained int it in different rows not a row with columns.
-5. do a git commit with a message saying "updated homepage jul 28 2025"
-6. Everything seems too big so i would like to reduce the size but not so much that everything looks small,
-   reduce the size of everything by a scale of .25 times.
+<!--**Always reference the design at https://www.figma.com/design/mcLX2ylBzW6lsGKEeWKQQW/Benson-Sam-Advocates-Website-Design?node-id=0-1&p=f&t=MTSENWhh0bsPXffv-0** to make sure the designs are matching-->
+
+**Always make sure the content in the section is horizontally and vertically centered**
+**Do not run any npm commands**
+**Always use em for sizing in css**
+
+1. Increase the height of the expert-guidance section by 30em.
+2. Increase the height of the why-choose-us section by 20em
+3. Increase the height of the areas-of-practice section by 25em
+4. Increase the height of the our-team section by 35em
+5. Increase the height of the our-insights section by 25em
+6. Increase the height of the legal-support section by 35em

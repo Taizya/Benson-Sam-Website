@@ -9,15 +9,19 @@ import Footer from "../components/Footer.astro";
 import GlassEffect from "../components/GlassEffect.astro";
 ---
 
-<link rel="stylesheet" href="/src/styles/home.css" />
+<link rel="stylesheet" href="/styles/home.css" />
 
 <BaseLayout>
-   <HeroLayout/>
+   <HeroLayout 
+   image="/assets/images/HeroImage.jpg"
+      title="Benson&Sam Advocates"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat. Duis aute irure dolor. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa non ab cupiditate id ducimus. Error repellat molestiae exercitationem impedit vel nostrum natus atque ullam incidunt assumenda maxime, neque labore unde."
+   />
 	<section class="expert-guidance">
       <div class="expert-guidance-layout">
          <div class="img-container">
             <img
-               src="/src/assets/images/site images/AboutUsImage.jpg"
+               src="/assets/images/AboutUsImage.jpg"
                alt="The Thinker statue"
             />
          </div>
@@ -58,27 +62,27 @@ import GlassEffect from "../components/GlassEffect.astro";
 		<h2>Areas of Practice</h2>
 		<div class="practice-areas-grid">
 			<PracticeArea
-				image="/src/assets/images/site images/ContractDrafting.svg"
+				image="/assets/images/ContractDrafting.svg"
 				title="Contract Drafting"
 			/>
 			<PracticeArea
-				image="/src/assets/images/site images/Consulting.svg"
+				image="/assets/images/Consulting.svg"
 				title="Consulting"
 			/>
 			<PracticeArea
-				image="/src/assets/images/site images/EstatePlanning.svg"
+				image="/assets/images/EstatePlanning.svg"
 				title="Estate Planning"
 			/>
 			<PracticeArea
-				image="/src/assets/images/site images/LegalResearch.svg"
+				image="/assets/images/LegalResearch.svg"
 				title="Legal Research"
 			/>
 			<PracticeArea
-				image="/src/assets/images/site images/TrademarkRegistration.svg"
+				image="/assets/images/TrademarkRegistration.svg"
 				title="Trademark Registration"
 			/>
 			<PracticeArea
-				image="/src/assets/images/site images/DebtRecovery.svg"
+				image="/assets/images/DebtRecovery.svg"
 				title="Debt Recovery"
 			/>
 		</div>
@@ -88,7 +92,7 @@ import GlassEffect from "../components/GlassEffect.astro";
 		<div class="our-team-layout">
 			<h2>Our Team</h2>
 			<CardsLayout />
-			<Button className="gold" />
+			<Button className="gold" style="position: relative; top: 1.5em;" />
 		</div>
 	</section>
 
@@ -97,15 +101,17 @@ import GlassEffect from "../components/GlassEffect.astro";
 			<h2>Our Insights</h2>
 			<div class="insights-grid">
 				<ArticleCard
-					image="/src/assets/images/site images/Insight1.jpg"
+					image="/assets/images/Insight1.jpg"
 					title="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off"
 				/>
 				<ArticleCard
-					image="/src/assets/images/site images/Insight2.jpg"
+					image="/assets/images/Insight2.jpg"
 					title="Ut enim ad minim veniam, quis nostrud exercitation ullamco."
 				/>
 			</div>
-			<Button className="black" />
+			<div style="position: relative; top: 1.5em;">
+				<Button className="black" />
+			</div>
 		</div>
 	</section>
 
