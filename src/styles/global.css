@@ -12,6 +12,7 @@
   --font-size-h1: 4.5em;
   --font-size-h2: 3.1875em;
   --font-size-h3: 1.875em;
+  --font-weight-h2: 500;
 }
 
 body {
@@ -23,11 +24,11 @@ body {
   color: var(--primary-dark);
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   font-family: var(--font-family-headings);
   color: var(--primary-dark);
@@ -58,11 +59,11 @@ p {
 }
 
 .button.gold {
-    background-color: var(--primary-gold);
-    color: var(--primary-dark);
+  background-color: var(--primary-gold);
+  color: var(--primary-dark);
 }
 
 .button.black {
-    background-color: var(--primary-dark);
-    color: var(--primary-white);
+  background-color: var(--primary-dark);
+  color: var(--primary-white);
 }

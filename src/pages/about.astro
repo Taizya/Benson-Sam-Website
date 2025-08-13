@@ -1,52 +1,131 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroLayout from '../layouts/HeroLayout.astro';
+import WhiteSection from '../layouts/WhiteSection.astro';
+import ImageBackgroundSection from '../layouts/ImageBackgroundSection.astro';
 import Button from '../components/Button.astro';
 import Footer from '../components/Footer.astro';
+import GlassEffect from "../components/GlassEffect.astro";
 ---
-
 <BaseLayout>
 
    <HeroLayout 
-      image="/assets/images/AboutUsImage.jpg"
-      title="About Us"
-      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut dolor" 
+   image="/assets/images/Gavel.jpg"
+      title="Your Trusted Partners in Law"
+      text="For decades, we’ve stood beside our clients, providing clear guidance and steadfast advocacy through life’s most complex challenges. Our team combines deep legal expertise with a personal commitment to protecting your rights and securing the best possible outcomes. At the heart of our practice is a simple promise — to serve with integrity, precision, and unwavering dedication." 
    />
-   <section class="why-choose-us">
-		<div class="overlay"></div>
-		<div class="content">
-			<h2>Our Mission and Values</h2>
-			<div class="reasons">
-				<div class="reason">
-					<h4>Provide Quality Service</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua
-					</p>
-				</div>
-				<div class="reason">
-					<h4>Transparency</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+   <WhiteSection>
+      <div class="about-introduction">
+         <div class="intro">
+            <GlassEffect
+               heading="Founding and Early History of the Company"
+               paragraph="Duis eu leo ac nulla bibendum blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer semper tortor in tellus porta, at pharetra purus tincidunt. Donec feugiat ligula ac ex rutrum, sit amet convallis lacus sollicitudin. Nunc id sapien a nulla commodo fermentum. Suspendisse potenti. Cras dictum imperdiet velit, nec finibus sem laoreet vitae. "
+            />
+         </div>
+         <div class="about-intro-image">
+            <img src="/assets/images/GoldScale.jpg" alt="Founding history" />
+         </div>
+      </div>
+   </WhiteSection>
 
-   <section class="legal-support">
-      <div class="overlay"></div>
-      <div class="content">
+   <ImageBackgroundSection backgroundImage="/assets/images/BookShelf.jpg">
+      <div class="value-proposition">
+         <h2>Our Mission and Values</h2>
+         <div class="reasons">
+           <div class="reason">
+             <h4>Provide Quality Service</h4>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua
+             </p>
+           </div>
+           <div class="reason">
+             <h4>Transparency</h4>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua.
+             </p>
+           </div>
+         </div>
+      </div>
+   </ImageBackgroundSection>
+
+   <WhiteSection>
+      <div class="call-to-action">
          <h2>Collaborate With a Team That Puts You First</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus fermentum, libero nec posuere vehicula, nulla nisl faucibus est, at egestas neque lorem sed lacus. Integer convallis, nisl sit amet facilisis accumsan, eros justo dictum urna, nec rhoncus eros nulla in arcu.</p>
-         <Button className="black" />
+         <Button className="black" text="Learn More"/>
       </div>
-   </section>
+   </WhiteSection>
 
    <Footer />
 </BaseLayout>
 
+<style>
+   .about-introduction {
+      display: flex;
+      align-items: center;
+      max-width: 42.1875em;
+      margin: 0 auto;
+      transform: translateX(3.25em);
+   }
 
+   .about-intro-image img {
+      width: 24.5em;
+      height: 34.3125em;
+      border-radius: calc(var(--border-radius) * 0.75);
+      object-fit: cover;
+      box-shadow: 0em 0.375em 0.28125em 0.09375em rgba(0, 0, 0, 0.25);
+   }
+   .about-introduction > :first-child {
+      margin-right: -7.14046875em;
+      z-index: 2;
+      position: relative;
+   }
+
+   .about-intro-image img {
+      width: 24.5em;
+      height: 34.3125em;
+      border-radius: calc(var(--border-radius) * 0.75);
+      object-fit: cover;
+      box-shadow: 0em 0.375em 0.28125em 0.09375em rgba(0, 0, 0, 0.25);
+   }
+
+   .value-proposition h2 {
+       color: var(--primary-gold);
+       font-size: var(--font-size-h2);
+       font-weight:  var(--font-weight-h2);
+   }
+
+   .reasons {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .reason {
+       text-align: left;
+   }
+
+   .reason h4,
+   .reason p {
+       text-align: left;
+   }
+   .reason h4,
+   .reason p {
+       text-align: left;
+   }
+
+   .call-to-action h2 {
+       font-size: var(--font-size-h2);
+   }
+   .call-to-action h2 {
+       font-size: var(--font-size-h2);
+   }
+
+   .call-to-action {
+       width: 55vw;
+   }
+</style>
