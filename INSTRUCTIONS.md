@@ -6,10 +6,7 @@
 
 - Make the following changes in the @src/pages/about.astro
 
-1. Modify the css of the h2 in the call-to-action div to have font size of --font-size-h2 which are defined in the global.css
-   file
-
-2. I want you to align the content horizontally and vertically within the section. It should be dead in the center.
+1. Modify the css of the ImageBackgroundSection so that it includes the shadow effect that the hero section has
 
 > [!IMPORTANT]
 > Do not change anything in the @src/pages/index.astro and @src/styles/home.css
