@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout.astro";
+import ImageBackgroundSection from "../layouts/ImageBackgroundSection.astro";
 import PracticeArea from "../components/PracticeArea.astro";
 import CardsLayout from "../layouts/CardsLayout.astro";
 import Button from "../components/Button.astro";
@@ -32,31 +33,29 @@ import GlassEffect from "../components/GlassEffect.astro";
       </div>
 	</section>
 
-
-	<section class="why-choose-us">
-		<div class="overlay"></div>
-		<div class="content">
-			<h2>Why Choose Us?</h2>
-			<div class="reasons">
-				<div class="reason">
-					<h4>Proven Legal Expertise</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua
-					</p>
-				</div>
-				<div class="reason">
-					<h4>Transparent & Strategic</h4>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+   <ImageBackgroundSection image="ValuePropositionImage.jpg">
+      <div class="value-proposition">
+         <h2>Why Choose Us?</h2>
+         <div class="reasons">
+           <div class="reason">
+             <h4>Proven Legal Expertise</h4>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua
+             </p>
+           </div>
+           <div class="reason">
+             <h4>Transparent & Strategic</h4>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua.
+             </p>
+           </div>
+         </div>
+      </div>
+   </ImageBackgroundSection>
 
 	<section class="areas-of-practice">
 		<h2>Areas of Practice</h2>
