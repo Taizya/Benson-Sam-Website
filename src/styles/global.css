@@ -8,7 +8,7 @@
   --light-gray: #d9d9d9;
   --font-family-headings: "Crimson Text", serif;
   --font-family-body: "Roboto", sans-serif;
-  --font-size-p: 1.0125em;
+  --font-size-p: 1.1585em;
   --font-size-h1: 4.5em;
   --font-size-h2: 3.1875em;
   --font-size-h3: 1.875em;
@@ -51,11 +51,6 @@ p {
   font-weight: 400;
   display: inline-block;
   text-align: center;
-}
-
-.button.dark {
-  background-color: var(--primary-dark);
-  color: var(--primary-gold);
 }
 
 .button.gold {

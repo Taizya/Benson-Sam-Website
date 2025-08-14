@@ -9,6 +9,7 @@ import ArticleCard from "../components/ArticleCard.astro";
 import Footer from "../components/Footer.astro";
 import GlassEffect from "../components/GlassEffect.astro";
 import WhiteSection from "../layouts/WhiteSection.astro";
+import BlackSection from "../layouts/BlackSection.astro";
 ---
 
 
@@ -96,15 +97,15 @@ import WhiteSection from "../layouts/WhiteSection.astro";
 
 	</WhiteSection>
 
-	<section class="our-team">
+	<BlackSection>
 		<div class="our-team-layout">
 			<h2>Our Team</h2>
 			<CardsLayout />
-			<Button className="gold" style="position: relative; top: 1.5em;" />
+			<Button className="gold"/>
 		</div>
-	</section>
+	</BlackSection>
 
-	<section class="our-insights">
+	<WhiteSection>
 		<div class="our-insights-layout">
 			<h2>Our Insights</h2>
 			<div class="insights-grid">
@@ -121,11 +122,10 @@ import WhiteSection from "../layouts/WhiteSection.astro";
 				<Button className="black" />
 			</div>
 		</div>
-	</section>
+	</WhiteSection>
 
-	<section class="legal-support">
-		<div class="overlay"></div>
-		<div class="content">
+	<ImageBackgroundSection image="CallToActionImage.jpg">
+		<div class="legal-content">
 			<h2>Need Legal Support You Can Trust?</h2>
 			<p>
 				Whether you're facing a complex legal challenge or simply need
@@ -134,7 +134,7 @@ import WhiteSection from "../layouts/WhiteSection.astro";
 			<span>Schedule your consultation today.</span>
 			<Button className="gold" text="Contact Us"/>
 		</div>
-	</section>
+	</ImageBackgroundSection>
 
 	<Footer />
 
