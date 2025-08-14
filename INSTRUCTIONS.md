@@ -6,11 +6,10 @@
 
 - Make the following changes in the @src/pages/index.astro
 
-1. Modify the css of the why-choose-us section to work in the same way the value-proposition section works in the
-   @src/pages/about.astro. Don't use the class used by value-proposition just extrapulate the styles and use a more fitting
-   class for the why-choose-us section or if possible extrapulate the stles and edit the ImageBackgroundSection so that it
-   can support the same styling for heading text that have been used in the value-proposition section so that the styles are not
-   duplicated everywhere it is used. If you implement this correctly it should allow me to remove the styles in the about.astro
-   that are duplicating this effect and not have any issues.
-   The goal is to allow sections in any page using the ImageBackgroundSection layout to have the same styling for text headings
-   that are currently being used in the value-proposition section of the about.astro
+1. Modify the areas-of-practice section to match what the design in figma (https://www.figma.com/design
+   /mcLX2ylBzW6lsGKEeWKQQW/Benson-Sam-Advocates-Website-Design?node-id=24-57&t=GI5cXfUUXJu1CB4d-0) looks like don't use the exact
+   dimensions of the design but just make sure the design is followed as a guide in. Make corrections specifically to the layout
+   and heading.
+
+> [!IMPORTANT]
+> Only work on the section specified above
