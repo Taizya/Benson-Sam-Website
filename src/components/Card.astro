@@ -10,7 +10,7 @@ const { name, position, image } = Astro.props;
 
 <div class="card">
 	{image && <img src={image} alt={name} class="member-image" />}
-   <div class="gold-shadow">
+   <div class="gold-overlay">
       <div class="card-content">
          <p class="name">{name}</p>
          <p class="position">{position}</p>
@@ -27,7 +27,7 @@ const { name, position, image } = Astro.props;
 		position: relative;
 		z-index: 0;
 	}
-   .gold-shadow{
+   .gold-overlay{
 		width: 13.77em;
 		height: 22.66em;
 		position: absolute;

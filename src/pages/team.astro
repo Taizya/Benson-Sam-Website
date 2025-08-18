@@ -1,32 +1,81 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroLayout from '../layouts/HeroLayout.astro';
+import WhiteSection from '../layouts/WhiteSection.astro';
+import ImageBackgroundSection from '../layouts/ImageBackgroundSection.astro';
 import Button from '../components/Button.astro';
 import CardsLayout from '../layouts/CardsLayout.astro';
 import Footer from '../components/Footer.astro';
+import Card from '../components/Card.astro';
 ---
 
 <BaseLayout>
 
-   <HeroLayout />
+   <HeroLayout 
+      image="/assets/images/BigBooksShelf.jpg"
+      title="Our Team"
+      text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut dolor " 
+   />
 
-   <section>
-      <h2>Team Members</h2>
-      <CardsLayout />
-      <Button />
-   </section>
-
-   <section>
-      <div>
-      <h2>Work with Us</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Voluptatum aspernatur possimus aperiam officia numquam molestiae aliquid dicta nostrum?</p>
-
-      <Button />
+   <WhiteSection minHeight="175vh">
+      <div class="team-members-section">
+         <h2>Meet the team</h2>
+         <CardsLayout>
+            <Card name="Sam Mujuda" position="Co-Founder" image="/assets/images/TeamMember1.jpg" />
+            <Card name="Full Name" position="Position" />
+            <Card name="Full Name" position="Position" />
+            <Card name="Full Name" position="Position" />
+            <Card name="Full Name" position="Position" />
+            <Card name="Full Name" position="Position" />
+         </CardsLayout>
       </div>
-   </section>
+   </WhiteSection>
+
+   <ImageBackgroundSection image="LadyLaw.jpg">
+      <div class="call-to-action">
+         <h2>Work with Us</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut dolor </p>
+         <Button className="gold" text="Learn More"/>
+      </div>
+   </ImageBackgroundSection>
+   
    <Footer />
+
+<style>
+   .team-members-section{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 50em;
+      margin: 0 auto;
+   }
+
+   .team-members-section h2{
+      font-size: var(--font-size-h2);
+      margin-bottom: 1em;
+      color: var(--text-dark);
+   }
+
+   .call-to-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 50em;
+      margin: 0 auto;
+   }
+
+   .call-to-action h2 {
+      font-size: var(--font-size-h2);
+      margin-bottom: 1em;
+      color: var(--primary-gold);
+   }
+
+   .call-to-action p {
+      font-size: 1.125em;
+      margin-bottom: 1.5em;
+      color: var(--primary-gold);
+   }
+</style>
 </BaseLayout>
-
-
-
