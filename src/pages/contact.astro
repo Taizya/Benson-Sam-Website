@@ -1,26 +1,152 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroLayout from '../layouts/HeroLayout.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroLayout from "../layouts/HeroLayout.astro";
+import WhiteSection from "../layouts/WhiteSection.astro";
+import ImageBackgroundSection from "../layouts/ImageBackgroundSection.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout>
-
-   <HeroLayout />
-   <div>
-         <img src="" alt="background">
+  <HeroLayout
+    image="/assets/images/contactImage.jpg"
+    title="Get In Touch"
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut dolor"
+  />
+  <WhiteSection>
+    <div class="contact_us-section">
+      <div class="contact_us-image">
+        <img
+          src="/assets/images/ladyJustice.jpg"
+          alt="ladyJustice"
+        />
       </div>
-      <div>
-         <form action="">
-            <input type="text" name="first-name" id="fname">
-            <input type="text" name="last-name" id="lname">
-            <input type="number" name="phone-number" id="phone-number">
-            <input type="email" name="email" id="email">
-            <textarea name="message" id="message"></textarea>
-
-            <button type="submit">Send</button>
-         </form>
+      <div class="contact-form">
+        <div class="glass-div">
+          <form action="">
+            <div class="full-names">
+              <input type="text" id="fname" name="fname" placeholder="First Name" />
+              <input type="text" id="lname" name="lname" placeholder="Last Name" />
+            </div>
+            <div class="form-field">
+              <input type="tel" id="phone" name="phone" placeholder="Phone" />
+            </div>
+            <div class="form-field">
+              <input type="email" id="mail" name="mail" placeholder="example@mail.com" />
+            </div>
+            <div class="form-field">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
       </div>
+    </div>
+  </WhiteSection>
 
-   <Footer />
+  <ImageBackgroundSection image="/assets/images/Gavel.jpg">
+    <div class="visit-office">
+      <h2>Visit Our Office</h2>
+      <p>We are conveniently located in the heart of the city.</p>
+      <div class="map-placeholder">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.325363433838!2d-0.1277583844638783!3d51.50735097963522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce3da4233d%3A0x2355a7633513388!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1629838909629!5m2!1sen!2suk"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"></iframe>
+      </div>
+    </div>
+  </ImageBackgroundSection>
+
+  <Footer />
 </BaseLayout>
+
+<style>
+  .contact_us-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 42.1875em;
+    margin: 0 auto;
+  }
+
+  .contact_us-image img {
+    width: 22.5em;
+    height: 32.3125em;
+    border-radius: calc(var(--border-radius) * 0.75);
+    object-fit: cover;
+    box-shadow: 0em 0.375em 0.28125em 0.09375em rgba(0, 0, 0, 0.25);
+  }
+
+  .glass-div {
+    background: rgba(255, 255, 255, 0.65);
+    padding: 1.875em;
+    border-radius: 0.46875em;
+    max-width: 25.515625em;
+    box-shadow: 0em 0.375em 0.28125em 0.09375em rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    position: relative;
+    margin-left: -4.14046875em;
+    color: #000;
+    text-align: left;
+  }
+
+  .full-names {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  .form-field {
+    margin-bottom: 1.5em;
+  }
+
+  input,
+  textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1em;
+    color: #000;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: lightgrey;
+  }
+
+  button[type="submit"] {
+    background-color: #d4af37;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  .visit-office {
+    text-align: center;
+    color: #fff;
+  }
+
+  .map-placeholder iframe {
+    width: 100%;
+    max-width: 50em;
+    height: 25em;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+  }
+</style>

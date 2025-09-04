@@ -3,7 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from "../layouts/HeroLayout.astro";
 import ImageBackgroundSection from "../layouts/ImageBackgroundSection.astro";
 import PracticeArea from "../components/PracticeArea.astro";
-import CardsLayout from "../layouts/CardsLayout.astro";
+import CardsLayout from '../layouts/CardsLayout.astro';
+import Card from '../components/Card.astro';
 import Button from "../components/Button.astro";
 import ArticleCard from "../components/ArticleCard.astro";
 import Footer from "../components/Footer.astro";
@@ -79,18 +80,6 @@ import BlackSection from "../layouts/BlackSection.astro";
                   image="/assets/images/EstatePlanning.svg"
                   title="Estate Planning"
                />
-               <PracticeArea
-                  image="/assets/images/LegalResearch.svg"
-                  title="Legal Research"
-               />
-               <PracticeArea
-                  image="/assets/images/TrademarkRegistration.svg"
-                  title="Trademark Registration"
-               />
-               <PracticeArea
-                  image="/assets/images/DebtRecovery.svg"
-                  title="Debt Recovery"
-               />
             </div>
          </div>
       </div>
@@ -100,7 +89,11 @@ import BlackSection from "../layouts/BlackSection.astro";
 	<BlackSection>
 		<div class="our-team-layout">
 			<h2>Our Team</h2>
-			<CardsLayout />
+         <CardsLayout>
+            <Card name="Sam Mujuda" position="Co-Founder" image="/assets/images/TeamMember1.jpg" />
+            <Card name="Full Name" position="Position" />
+            <Card name="Full Name" position="Position" />
+         </CardsLayout>
 			<Button className="gold"/>
 		</div>
 	</BlackSection>
@@ -138,6 +131,7 @@ import BlackSection from "../layouts/BlackSection.astro";
 
 	<Footer />
 
+</BaseLayout>
 <style>
    .expert-guidance-section {
       display: flex;

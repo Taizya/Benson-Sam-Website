@@ -85,18 +85,6 @@
   margin: 0 auto;
 }
 
-.areas-of-practice-section .section-heading {
-  text-align: center;
-  font-family: "Crimson Text", serif;
-  font-weight: 600;
-  font-size: var(--font-size-h2);
-  line-height: 1.3;
-  color: var(--text-dark);
-  margin-bottom: calc(var(--spacing-lg) * 0.75);
-  width: 100%;
-  margin-top: 0;
-}
-
 .practice-areas-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -132,18 +120,6 @@
   .hero-content p {
     font-size: var(--font-size-p);
   }
-
-  .expert-guidance-content {
-    background: rgba(255, 255, 255, 0.65);
-    padding: 1.875em;
-    border-radius: calc(var(--border-radius) * 0.75);
-    max-width: 21.515625em;
-    box-shadow: 0em 0.375em 0.28125em 0.09375em rgba(0, 0, 0, 0.25);
-    z-index: 2;
-    position: relative;
-    margin-left: -7.14046875em;
-    color: #000;
-  }
 }
 
 .legal-content {
@@ -162,4 +138,3 @@
 .legal-content > * {
   display: block;
 }
-

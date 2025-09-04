@@ -4,11 +4,14 @@
 **Do not run any npm commands**
 **Always use em for sizing in css**
 
-- Use the following figma design (https://www.figma.com/design/mcLX2ylBzW6lsGKEeWKQQW/Benson-Sam-Advocates-Website-Design?node-id=45-25&t=cpS1JnMEpujoJrc3-0)
-  as a reference and make the following changes to the @src/pages/team.astro page
+Make the following changes in @src/pages/contact.astro
 
-1. Modify the team page to use two rows instead of just one just like the design in the team-members section.
-   You are allowed to modify the Cardslayout so that it can accepts the cards to be displayed in via slot and make sure to
-   include styles that only allow 3 cards in a single row.
+1. Make add some css that doesn't allow the blue border to be added to the form fields when they are focused
+2. Add the find-us section that sould include some content and a placeholder for google maps placeholder where i will fill
+   in by adding the actual geographical location with google maps
+   - use any location for now
+   - Use the ImageBackground section instead of BlackSection as was done previously with the commented code
 
-> [!IMPORTANT] > **DO NOT** make any changes to the index and about pages
+> [!IMPORTANT] DO NOT make any changes to the other files. You are only allowed to work on the astro file mentioned above
+> if there are changes that need to be made to the other files You must explain why you want to make that change and i will
+> review the change and approve or reject it.
