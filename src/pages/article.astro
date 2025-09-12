@@ -6,9 +6,7 @@ import WhiteSection from "../layouts/WhiteSection.astro";
 ---
 
 <BaseLayout>
-   <div class="article-navbar-container">
-      <NavBar />
-   </div>
+   <NavBar bgColor='black' staticNav={true} />
    <WhiteSection minHeight="165vh">
       <div class="article-content">
          <h1>Protecting Your Ideas: A Beginner’s Guide to Intellectual Property Rights</h1>
@@ -25,17 +23,6 @@ import WhiteSection from "../layouts/WhiteSection.astro";
 </BaseLayout>
 
 <style>
-   .article-navbar-container {
-      max-width: 45.703125em;
-      margin: 0 auto;
-      position: relative;
-      z-index: 1;
-   }
-
-   .article-navbar-container :global(header nav a) {
-      @apply text-[var(--primary-gold)];
-   }
-
    .article-content {
       max-width: 50.25em;
       margin: 0 auto;

@@ -2,17 +2,24 @@
 interface Props {
 	image: string;
 	title: string;
+	url: string;
 }
 
-const { image, title } = Astro.props;
+const { image, title, url } = Astro.props;
 ---
 
-<div class="article-card">
-	<img src={image} alt={title} />
-	<p>{title}</p>
-</div>
+<a href={url} class="article-card-link">
+	<div class="article-card">
+		<img src={image} alt={title} />
+		<p>{title}</p>
+	</div>
+</a>
 
 <style>
+	.article-card-link {
+		text-decoration: none;
+	}
+
 	.article-card {
 		background-color: rgba(219, 219, 219, 0.56);
 		border-radius: 0.625em;

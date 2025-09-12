@@ -1,7 +1,7 @@
 ---
+const { bgColor = "transparent"} = Astro.props;
 ---
-
-<header>
+<header class:list={bgColor}>
    <a href="/" class="logo">Benson & Sam</a>
    <nav>
       <a href="/about">About Us</a>
@@ -13,16 +13,21 @@
 
 <style>
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2rem 0rem;
-        border-bottom: 1px solid rgba(210, 172, 103, 0.2);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 15em;
+      padding: 2em 0;
+      border-bottom: 1px solid rgba(210, 172, 103, 0.2);
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .black {
+        background: var(--primary-dark);
     }
 
     .logo {
@@ -39,6 +44,6 @@
         font-size: 0.9375em;
         color: var(--primary-gold);
         text-decoration: none;
-        margin-left: 0.75rem;
+        margin-left: 0.75em;
     }
 </style>
