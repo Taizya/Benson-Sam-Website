@@ -4,13 +4,14 @@
 **Do not run any npm commands**
 **Always use em for sizing in css**
 
-Make the following changes in astro@src/components/articles.astro,
+Make the following changes in @src/pages/area.astro.
 
-1. Modify the articles page to achieve the following:
+1. Modify the area page to achieve the following:
 
-   - Modify the each article in the articles page to support redirection upon clicking any single article.
+   - Modify the related-articles-section to copy the styling in the our-insights section that control the way the articles
+     are grouped and centered of th index page
 
-- You may use the design as a reference [figma link](https://www.figma.com/design/mcLX2ylBzW6lsGKEeWKQQW/Benson-Sam-Advocates-Website-Design?node-id=45-25&t=U79YdQlz0usakcze-0)
+<!--- You may use the design as a reference [figma link](https://www.figma.com/design/mcLX2ylBzW6lsGKEeWKQQW/Benson-Sam-Advocates-Website-Design?node-id=75-33&t=uVEo3dhz0aysEJ9y-0)-->
 
 > [!IMPORTANT] DO NOT make any changes to the other files. You are only allowed to work on the astro file mentioned above
 > if there are changes that need to be made to the other files You must explain why you want to make that change and i will

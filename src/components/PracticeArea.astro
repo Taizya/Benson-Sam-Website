@@ -1,18 +1,26 @@
----
+--- 
 interface Props {
 	image: string;
 	title: string;
+	url: string;
 }
 
-const { image, title } = Astro.props;
+const { image, title, url } = Astro.props;
 ---
 
-<div class="practice-area-card">
-	<img src={image} alt={title} />
-	<span>{title}</span>
-</div>
+<a href={url} class="practice-area-link">
+	<div class="practice-area-card">
+		<img src={image} alt={title} />
+		<span>{title}</span>
+	</div>
+</a>
 
 <style>
+	.practice-area-link {
+		text-decoration: none;
+		color: #000;
+	}
+
 	.practice-area-card {
 		background-color: #fff;
 		border-radius: 0.625em;
@@ -36,7 +44,7 @@ const { image, title } = Astro.props;
 		font-size: 1.3125em;
 		line-height: 1.17;
 		text-align: center;
-		color: 000;
+		color: #000;
 		margin-top: 0.75em;
 		width: 4.5em;
 	}

@@ -1,40 +1,176 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HeroLayout from '../layouts/HeroLayout.astro';
+import WhiteSection from '../layouts/WhiteSection.astro';
+import BlackSection from '../layouts/BlackSection.astro';
+import ImageBackgroundSection from '../layouts/ImageBackgroundSection.astro';
 import ArticleCard from "../components/ArticleCard.astro";
+import Card from '../components/Card.astro';
 import Footer from "../components/Footer.astro";
 ---
 
 <BaseLayout>
-   <HeroLayout />
-   <section>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            A sapiente vero nam, repellendus quasi veniam, at laborum consequuntur voluptatum, blanditiis modi voluptatem.
-            Eveniet nulla minima possimus velit optio, repellat dolor modi nostrum excepturi.
-            A, ipsa. Accusamus repellendus eum blanditiis deserunt necessitatibus, reprehenderit ducimus voluptate ab ullam natus tempore minima cum delectus nemo atque.
-            Consequuntur expedita non iure dolorum quibusdam mollitia a ab similique earum ea quod, eveniet voluptates? Eligendi necessitatibus rerum unde ex iste asperiores! Facilis, in fugit obcaecati,
-            praesentium veritatis earum quia eligendi placeat soluta animi vitae tempore ipsum odio asperiores totam, laborum a nesciunt laboriosam debitis enim saepe?</p>
-   </section>
-   <section>
-      <div>
-         <img src="" alt="">
-         <span>Sam Mujuda</span>
-         <span>Lorem ipsum dolor sit amet consectetur.</span>
+   <HeroLayout 
+      image="/assets/images/area-hero-background.jpg"
+      title="Employment Termination Disputes"
+   />
+   <WhiteSection minHeight="100vh">
+      <div class="intro-text">
+         <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br /><br />
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Sit eligendi ad beatae. Provident sapiente similique suscipit tempore optio inventore architecto recusandae.
+            Exercitationem omnis unde magnam ducimus tempore veritatis modi hic!
+         </p>
       </div>
-      <div>
-         <img src="" alt="">
-         <span>Sam Mujuda</span>
-         <span>Lorem ipsum dolor sit amet consectetur.</span>
+   </WhiteSection>
+   <BlackSection>
+      <div class="lawyers-section">
+         <h2>Lawyers</h2>
+         <div class="lawyers-grid">
+            <Card name="Sam Mujuda" position="Co-Founder" image="/assets/images/TeamMember1.jpg" />
+            <Card name="Full Name" position="Position" />
+         </div>
       </div>
-   </section>
-   <section>
-      <h2>Services</h2>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-   </section>
-   <section></section>
-
+   </BlackSection>
+   <ImageBackgroundSection image="area-hero-background.jpg">
+      <div class="services-section">
+         <h2>Services</h2>
+         <ul class="services-list">
+            <li>
+               <div class="service-icon">
+                  <span>&#10003;</span>
+               </div>
+               <span>Sed do eiusmod tempor incididunt ut labore et dolor.</span>
+            </li>
+            <li>
+               <div class="service-icon">
+                  <span>&#10003;</span>
+               </div>
+               <span>Ut enim ad minim veniam, quis nostrud exercitation.</span>
+            </li>
+            <li>
+               <div class="service-icon">
+                  <span>&#10003;</span>
+               </div>
+               <span>Curabitur pretium tincidunt lacus. Nulla gravida orci.</span>
+            </li>
+            <li>
+               <div class="service-icon">
+                  <span>&#10003;</span>
+               </div>
+               <span>Integer in mauris eu nibh euismod gravida.</span>
+            </li>
+         </ul>
+      </div>
+   </ImageBackgroundSection>
+   <WhiteSection>
+      <div class="related-articles-section">
+         <h2>Related Articles</h2>
+         <div class="article-row">
+           <ArticleCard
+             title="The Importance of Estate Planning"
+             image="/assets/images/Insight1.jpg"
+             url="/article"
+           />
+           <ArticleCard
+             title="Navigating Corporate Law"
+             image="/assets/images/Insight2.jpg"
+             url="/article"
+           />
+         </div>
+      </div>
+   </WhiteSection>
    <Footer />
 </BaseLayout>
+
+<style>
+   .intro-text {
+      max-width: 60.25em;
+      margin: 0 auto;
+      text-align: left;
+      padding: 5em 0;
+   }
+
+   .lawyers-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5em 0;
+   }
+
+   .lawyers-section h2 {
+      font-size: var(--font-size-h2);
+      margin-bottom: 1em;
+      color: var(--primary-gold);
+   }
+
+   .lawyers-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5em;
+   }
+
+   .services-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5em 0;
+      color: var(--primary-gold);
+   }
+
+   .services-section h2 {
+      font-size: var(--font-size-h2);
+      margin-bottom: 1em;
+   }
+
+   .services-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   .services-list li {
+      display: flex;
+      align-items: center;
+      font-size: var(--font-size-p);
+      margin-bottom: 2em;
+      font-family: var(--font-family-headings);
+   }
+
+   .service-icon {
+      border: 1px solid var(--primary-gold);
+      border-radius: 0.625em;
+      width: 2.5em;
+      height: 2.5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1.5em;
+      font-size: 1.5em;
+   }
+
+   .related-articles-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5em 0;
+   }
+
+   .related-articles-section h2 {
+      font-size: var(--font-size-h2);
+      margin-bottom: 1em;
+   }
+
+  .article-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+  }
+
+</style>
