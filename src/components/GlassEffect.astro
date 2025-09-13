@@ -2,6 +2,11 @@
 const { heading, paragraph } = Astro.props;
 ---
 
+<div class="glass-effect">
+  <h2>{heading}</h2>
+  <p>{paragraph}</p>
+</div>
+
 <style>
   .glass-effect {
     background: rgba(255, 255, 255, 0.65);
@@ -31,8 +36,3 @@ const { heading, paragraph } = Astro.props;
     color: #000;
   }
 </style>
-
-<div class="glass-effect">
-  <h2>{heading}</h2>
-  <p>{paragraph}</p>
-</div>

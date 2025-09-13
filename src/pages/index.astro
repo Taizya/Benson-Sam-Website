@@ -66,18 +66,9 @@ import BlackSection from '../layouts/BlackSection.astro';
          <h2>Areas of Practice</h2>
          <div class="areas">
             <div class="practice-areas-grid">
-               <PracticeArea
-                  image="/assets/images/ContractDrafting.svg"
-                  title="Contract Drafting"
-               />
-               <PracticeArea
-                  image="/assets/images/Consulting.svg"
-                  title="Consulting"
-               />
-               <PracticeArea
-                  image="/assets/images/EstatePlanning.svg"
-                  title="Estate Planning"
-               />
+               <PracticeArea image="/assets/images/ContractDrafting.svg" title="Contract Drafting" url="/area" />
+               <PracticeArea image="/assets/images/Consulting.svg" title="Consulting" url="/area" />
+               <PracticeArea image="/assets/images/EstatePlanning.svg" title="Estate Planning" url="/area" />
             </div>
          </div>
       </div>
@@ -99,16 +90,18 @@ import BlackSection from '../layouts/BlackSection.astro';
 	<WhiteSection>
 		<div class="our-insights-layout">
 			<h2>Our Insights</h2>
-			<div class="insights-grid">
-				<ArticleCard
-					image="/assets/images/Insight1.jpg"
-					title="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off"
-				/>
-				<ArticleCard
-					image="/assets/images/Insight2.jpg"
-					title="Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-				/>
-			</div>
+         <div class="article-row">
+           <ArticleCard
+             title="The Importance of Estate Planning"
+             image="/assets/images/Insight1.jpg"
+             url="/article"
+           />
+           <ArticleCard
+             title="Navigating Corporate Law"
+             image="/assets/images/Insight2.jpg"
+             url="/article"
+           />
+         </div>
 			<div style="position: relative; top: 1.5em;">
 				<Button className="black" />
 			</div>
