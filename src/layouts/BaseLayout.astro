@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'
+import '../styles/hover.css'
 ---
 <!doctype html>
 <html lang="en">
@@ -10,5 +11,35 @@ import '../styles/global.css'
 	</head>
 	<body>
 		<slot />
+      <script>
+        import ScrollReveal from 'scrollreveal';
+        
+        const slideUp = {
+           delay: 250,
+           duration: 2000,
+           distance: '150%',
+           origin: 'bottom',
+           opacity: 0
+        };
+
+        ScrollReveal().reveal('.hero-content', slideUp);
+        ScrollReveal().reveal('.content-wrapper', slideUp);
+        ScrollReveal().reveal('.black-content-wrapper', slideUp);
+        ScrollReveal().reveal('.white-content-wrapper', slideUp);
+      </script>
+      <script>
+         // Wait for the DOM to be fully loaded before running the script
+         document.addEventListener('DOMContentLoaded', () => {
+
+           const contentElement = document.querySelector('.hero-content');
+
+           const animationDelay = 50;
+
+           setTimeout(() => {
+             contentElement.classList.remove('hidden');
+           }, animationDelay);
+         });
+      </script>
 	</body>
 </html>
+

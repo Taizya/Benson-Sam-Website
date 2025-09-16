@@ -14,7 +14,7 @@ const { title, text, image } = Astro.props;
 
 <section class="hero-section" style={`background-image: url(${image})`}>
    <div class="hero-overlay"></div>
-   <div class="hero-content">
+   <div class="hero-content hidden">
       <NavBar />
       <HeroContent title={title} text={text}/>
    </div>
@@ -26,6 +26,14 @@ const { title, text, image } = Astro.props;
       background-position: center;
       min-height: 100vh;
       position: relative;
+   }
+
+   .hidden{
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+   }
+   .visible {
+      opacity: 1;
    }
 
    .hero-overlay {

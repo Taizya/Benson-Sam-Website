@@ -8,7 +8,7 @@ interface Props {
 const { image, title, url } = Astro.props;
 ---
 
-<a href={url} class="article-card-link">
+<a href={url} class="article-card-link hvr-grow">
 	<div class="article-card">
 		<img src={image} alt={title} />
 		<p>{title}</p>
