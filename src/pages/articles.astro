@@ -1,0 +1,161 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavBar from '../components/NavBar.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Footer from '../components/Footer.astro';
+import WhiteSection from '../layouts/WhiteSection.astro';
+---
+
+<BaseLayout>
+  <NavBar bgColor='black' staticNav={true} />
+  <WhiteSection minHeight="200vh">
+    <div class="search-filter-container">
+       <div class="search-container">
+         <div class="search-wrapper">
+           <input type="search" placeholder="Search" class="search-input" />
+           <img
+             src="/assets/images/search-icon.svg"
+             alt="Search Icon"
+             class="search-icon"
+           />
+         </div>
+         <button type="button" class="filter-button">
+           <img src="/assets/images/filter-icon.svg" alt="Filter Icon" />
+         </button>
+       </div>
+    </div>
+
+    <div class="articles-container">
+       <div class="articles">
+         <div class="article-row">
+           <ArticleCard
+             title="The Importance of Estate Planning"
+             image="/assets/images/Insight1.jpg"
+             url="/article"
+           />
+           <ArticleCard
+             title="Navigating Corporate Law"
+             image="/assets/images/Insight2.jpg"
+             url="/article"
+           />
+         </div>
+         <div class="article-row">
+           <ArticleCard
+             title="Understanding Contract Law"
+             image="/assets/images/giammarco-boscaro-xLhKkk2tKkA-unsplash.jpg"
+             url="/article"
+           />
+           <ArticleCard
+             title="Debt Recovery Strategies"
+             image="/assets/images/bernd-dittrich-o2tCjrHTgwc-unsplash.jpg"
+             url="/article"
+           />
+         </div>
+       </div>
+    </div>
+
+    <div class="expand-button-container">
+      <button id="see-more">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 15.375L6 9.375L7.05 8.325L12 13.275L16.95 8.325L18 9.375L12 15.375Z"
+            fill="black"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </WhiteSection>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .search-filter-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 1em;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 1em;
+  }
+
+  .search-wrapper {
+    position: relative;
+    width: 50%;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.8em 2.5em 0.8em 1em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .filter-button {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    cursor: pointer;
+  }
+
+  .filter-button img {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .articles-container {
+    display: block;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+
+  .article-row {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+  }
+
+  .expand-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  #see-more {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+</style>

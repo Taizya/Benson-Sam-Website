@@ -1,0 +1,31 @@
+---
+interface Props {
+  customClass?: string;
+}
+
+const { customClass } = Astro.props;
+---
+
+<section class:list={["black-section", customClass]}>
+  <div class="black-content-wrapper">
+     <slot />
+  </div>
+</section>
+
+<style>
+  .black-section {
+    background-color: var(--primary-dark);
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-gold);
+    text-align: center;
+  }
+
+  .black-content-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+</style>

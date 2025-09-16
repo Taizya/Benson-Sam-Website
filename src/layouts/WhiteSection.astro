@@ -1,0 +1,27 @@
+---
+const { minHeight = '118vh' } = Astro.props;
+---
+
+<section class="white-section" style={`min-height: ${minHeight};`}>
+   <div class="white-content-wrapper">
+      <slot />
+   </div>
+</section>
+
+<style>
+  .white-section {
+    background-color: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-dark);
+    text-align: center;
+  }
+
+  .white-content-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+</style>
